@@ -10,7 +10,7 @@ let workItems = [];
 
 app.set('view engine', 'ejs');
 
-const port = 3000;  //const is used for constant that value does not change:
+const port = process.env.PORT || 3000;  //const is used for constant that value does not change:
 
 app.use(bodyParser.urlencoded({extended: true}));
 
